@@ -9,15 +9,15 @@ For all eight files, there are different trajectories that can be simulated: 3D 
 The GA files have options for tuning on either the 3D Line or Upwards Spiral trajectories. Initial gains, seed gains, GA parameters, and more can be customized as needed.
 
 ## Files
-***Quadcopter_PID_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with a PID controller on a straight line, spiral, or rose petal curve, with or without wind.
-***Quadcopter_LQ_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with an LQ controller on a straight line, spiral, or rose petal curve, with or without wind.
-***Quadcopter_LQI_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with an LQI controller on a straight line, spiral, or rose petal curve, with or without wind.
-***Quadcopter_MPC_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with an MPC controller on a straight line, spiral, or rose petal curve, with or without wind.
+***Quadcopter_PID_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with a PID controller on a straight line, spiral, or rose petal curve, with or without wind.  
+***Quadcopter_LQ_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with an LQ controller on a straight line, spiral, or rose petal curve, with or without wind.  
+***Quadcopter_LQI_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with an LQI controller on a straight line, spiral, or rose petal curve, with or without wind.  
+***Quadcopter_MPC_Trajectory_Tracking.m*** - Simulate quadcopter trajectory tracking with an MPC controller on a straight line, spiral, or rose petal curve, with or without wind.  
 
-***GA_Tune_PID.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the PID controller via a minimized RMSE cost function on either a line or spiral trajectory.
-***GA_Tune_LQ.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the LQ controller via a minimized RMSE cost function on either a line or spiral trajectory.
-***GA_Tune_LQI.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the LQI controller via a minimized RMSE cost function on either a line or spiral trajectory.
-***GA_Tune_MPC.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the MPC controller via a minimized RMSE cost function on either a line or spiral trajectory.
+***GA_Tune_PID.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the PID controller via a minimized RMSE cost function on either a line or spiral trajectory.  
+***GA_Tune_LQ.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the LQ controller via a minimized RMSE cost function on either a line or spiral trajectory.  
+***GA_Tune_LQI.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the LQI controller via a minimized RMSE cost function on either a line or spiral trajectory.  
+***GA_Tune_MPC.m*** - Leverage MATLAB's *ga* function from the Genetic Algorithm Toolbox to optimize tuning for the MPC controller via a minimized RMSE cost function on either a line or spiral trajectory.  
 
 ## Point of Contact
 ADD
