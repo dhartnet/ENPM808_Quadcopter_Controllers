@@ -3,9 +3,9 @@ format long;
 
 tic % Start timer for computation
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% LQ Controller for Quadcopter Trajectory Tracking %%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% LQR Controller for Quadcopter Trajectory Tracking %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Platform Parameters
 m = 1.25; % Mass (kg)
@@ -265,7 +265,7 @@ rmse_x = sqrt(mean(e_x.^2));
 rmse_y = sqrt(mean(e_y.^2));
 rmse_z = sqrt(mean(e_z.^2));
 
-fprintf('\nRoot Mean Squared Error for LQ Trajectory Tracker\n')
+fprintf('\nRoot Mean Squared Error for LQR Trajectory Tracker\n')
 fprintf('- - - - - - - - - - - - - - -\n');
 fprintf('3-Dimensional RMSE: %.3f meters\n', rmse_3D)
 fprintf('X-Position RMSE: %.3f meters\n', rmse_x)
@@ -323,7 +323,7 @@ for j = 1:6
     legend('Actual','Reference');
     grid on;
 end
-sgtitle('Quadcopter States with LQ Controller');
+sgtitle('Quadcopter States with LQR Controller');
 
 % Plot inputs
 figure;
@@ -335,7 +335,7 @@ for k = 1:4
     ylabel(labels{k});
     grid on;
 end
-sgtitle('Quadcopter Control Inputs with LQ Controller')
+sgtitle('Quadcopter Control Inputs with LQR Controller')
 
 % Plot 3D trajectory
 figure;
@@ -350,4 +350,5 @@ xlabel('X (m)'); ylabel('Y (m)'); zlabel('Z (m)');
 legend('Reference Trajectory','Actual Trajectory','Start','End');
 grid on;
 axis equal;
-title('3D Position for Trajectory Tracking with LQ Controller');
+
+title('3D Position for Trajectory Tracking with LQR Controller');
