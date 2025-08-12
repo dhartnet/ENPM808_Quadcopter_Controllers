@@ -2,7 +2,7 @@ clc; clear; close all;
 format long;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% Genetic Algorithm Gain Optimization for LQ Controller %%%%%%%%
+%%%%%%%% Genetic Algorithm Gain Optimization for LQR Controller %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -221,4 +221,5 @@ cost = @(QR) LQ(A, B, QR, U_ref, x_ref);
 [bestGains, bestCost] = ga(cost, vars, [], [], [], [], lb, ub, [], opts);
 
 % Display best costs to terminal after running
+
 bestGains
